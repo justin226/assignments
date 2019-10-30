@@ -14,6 +14,7 @@ Enter password to continue:
 <input id="password" type="password">
 <br>
 <input type="submit" value="Submit" id="submit" />
+<p id="response"></p>
 </div>
 <div id="assignment" style="display: none">
 Aardvark
@@ -47,7 +48,7 @@ document.getElementById("lock").style.display = "none"
 document.getElementById("assignment").style.display = "block"
 }
 else{
-alert("Incorrect");
+document.getElementById("response").innerHTML = "Incorrect";
 }
 });
 </script>
