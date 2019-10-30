@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Freak the mighty assignment
+</title>
+</head>
+<body>
+<div id="lock">
+<h1>You need permission</h1>
+<hr>
+Enter password to continue:
+<br>
+<input id="password" type="password">
+<br>
+<buttton id="submit">Submit</button>
+</div>
+<div id="assignment" style="display: none">
+Aardvark
+<br>
+Freak's definition: a silly looking creature that eats ants
+<br>
+Real definition: a nocturnal burrowing mammal with long ears, a tubular snout, and a long extensible tongue
+</div>
+<script>
+document.getElementById("submit").addEventListener("click", function(){
+if(document.getELementById().value==="1A2B3C"){
+document.getElementById("lock").style.display = "none"
+document.getElementById("assignment").style.display = "block"
+}
+});
+</script>
+</body>
+</html>
